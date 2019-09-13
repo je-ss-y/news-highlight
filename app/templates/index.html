@@ -1,0 +1,20 @@
+<!-- <h1>hello world</h1> -->
+<html>
+<head></head>
+<body>
+    <!-- entertainment source section  -->
+    <h3> entertainment news</h3>
+     <ul>
+        {% for entertainment_sources in entertainment %}
+            <li>{{entertainment_sources.name}}</li>
+            <li>{{entertainment_sources.description}}</li>
+            <li>{{entertainment_sources.url}}</li>
+            <li>{{entertainment_sources.category}}</li>
+            <li>{{entertainment_sources.language}}</li>
+            <li>{{entertainment_sources.country}}</li>
+
+            
+        {% endfor %}
+    </ul>
+</body>
+</html>
