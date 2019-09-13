@@ -16,5 +16,18 @@
             
         {% endfor %}
     </ul>
+    <h3> business news</h3>
+     <ul>
+        {% for business_sources in business%}
+            <li>{{business_sources.name}}</li>
+            <li>{{business_sources.description}}</li>
+            <li>{{business_sources.url}}</li>
+            <li>{{business_sources.category}}</li>
+            <li>{{business_sources.language}}</li>
+            <li>{{business_sources.country}}</li>
+
+            
+        {% endfor %}
+    </ul>
 </body>
 </html>

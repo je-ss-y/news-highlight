@@ -13,5 +13,7 @@ def index():
   # Getting entertainment news
   entertainment_sources = get_source('entertainment')
   
-  title = 'Home - Welcome to The best Movie Review Website Online'
-  return render_template('index.html',entertainment = entertainment_sources)
+   # Getting entertainment news
+  business_sources = get_source('business')
+  
+  return render_template('index.html',entertainment = entertainment_sources, business = business_sources)
