@@ -59,3 +59,23 @@ def process_results(source_list):
 
     
     return source_results
+
+def get_articles(id):
+    get_articles_details_url = base_url.format(id,api_key)
+
+    with urllib.request.urlopen(get_articles_details_url) as url:
+        articles_details_data = url.read()
+        articles_details_response = json.loads(movie_details_data)
+
+        article_object = None
+        if articles_details_response:
+            id = articles_details_response.get('id')
+            title = articles_details_response.get('original_title')
+            overview = articles_details_response.get('overview')
+            poster = articles_details_response.get('poster_path')
+            vote_average = articles_details_response.get('vote_average')
+            vote_count = articles_details_response.get('vote_count')
+
+            article_object = Article(id,title,overview,poster,vote_average,vote_count)
+
+    return article_object
