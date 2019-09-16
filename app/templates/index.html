@@ -1,7 +1,8 @@
-<!-- <h1>hello world</h1> -->
-<html>
-<head></head>
-<body>
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<!-- Content block -->
+{% block content %}
+
     <!-- entertainment source section  -->
     <h3> entertainment news</h3>
      <ul>
@@ -29,5 +30,5 @@
             
         {% endfor %}
     </ul>
-</body>
-</html>
+    
+{% endblock%}
