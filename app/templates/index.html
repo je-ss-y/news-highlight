@@ -6,29 +6,13 @@
     <!-- entertainment source section  -->
     <h3> entertainment news</h3>
      <ul>
-        {% for entertainment_sources in entertainment %}
-            <li>{{entertainment_sources.name}}</li>
-            <li>{{entertainment_sources.description}}</li>
-            <li>{{entertainment_sources.url}}</li>
-            <li>{{entertainment_sources.category}}</li>
-            <li>{{entertainment_sources.language}}</li>
-            <li>{{entertainment_sources.country}}</li>
-
-            
-        {% endfor %}
+        {{ macro. displayNewsList(entertainment)}}
+        <p><a href="/articles/{{entertainment.id}}">Read Articles</a></p>   
     </ul>
     <h3> business news</h3>
      <ul>
-        {% for business_sources in business%}
-            <li>{{business_sources.name}}</li>
-            <li>{{business_sources.description}}</li>
-            <li>{{business_sources.url}}</li>
-            <li>{{business_sources.category}}</li>
-            <li>{{business_sources.language}}</li>
-            <li>{{business_sources.country}}</li>
-
-            
-        {% endfor %}
+        {{ macro. displayNewsList(business)}}
+        <p><a href="/articles/{{business.id}}">Read Articles</a></p>   
     </ul>
     
 {% endblock%}
