@@ -14,17 +14,15 @@ class Source:
 
 
 class Articles:
-    '''
-    Sources class that defines source objects
-    '''
-    def __init__(self,id,author,title,description,content,url,publishedAt):
-        '''
-        Function that initiates the sources class
-        '''
-        self.id = id
-        self.author = author
-        self.title = title
-        self.description = description
-        self.content = content
-        self.url = url
+   '''
+   Articles class to define articles objects
+   '''
+   def __init__(self,id,author,title,description,url,image,date):
+       self.id = id
+       self.author = author
+       self.title = title
+       self.description = description
+       self.url = url
+       self.image = image
+       self.date = date
        

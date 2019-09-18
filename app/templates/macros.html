@@ -1,5 +1,5 @@
 {% macro displayNewsList(source_list) %}
-
+<ul>
     {% for source in source_list %}
         <li>{{ source.name}}</li>
         <li>{{source.description}}</li>
@@ -7,20 +7,10 @@
         <li>{{ source.category}}</li>
         <li>{{ source.language}}</li>
         <li>{{ source.country}}</li>
-    {% endfor %}
+        <a href="/article/{{source.id}}" > Articles</a>
 
+    {% endfor %}
+</ul>  
 {% endmacro %}
 
-{% macro displayArticles(articles_list) %}
-
-    {% for article in articles_list %}
-        <li>{{ article.author}}</li>
-        <li>{{ article.title}}</li>
-        <li>{{ article.description}}</li>
-        <li>{{ article.content}}</li>
-        <li>{{ article.url}}</li>
-        <li>{{ article.publishedAt}}</li>
-    {% endfor %}
-
-{% endmacro %}
 

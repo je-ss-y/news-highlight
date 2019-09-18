@@ -13,20 +13,21 @@ def index():
   '''
   # Getting entertainment news
   entertainment_sources = get_source('entertainment')
+  print(entertainment_sources)
   
    # Getting entertainment news
   business_sources = get_source('business')
   
   return render_template('index.html',entertainment = entertainment_sources, business = business_sources)
 
-  @app.route('/article/<int:id>')
+@main.route('/article/<id>')
 
-  def article(id):
+def articles(id):
 
-    '''
-    View article page function that returns the news details page and its data
-    '''
-    article = get_article(id)
-    title = f'{article.title}'
+  '''
+  View article page function that returns the news details page and its data
+  '''
+  articles = get_articles(id)
+  # title = f'{articles.title}'
 
-    return render_template('article.html',title = title,article = article)
+  return render_template('articles.html',articles = articles)
