@@ -10,3 +10,6 @@ In context, your parents are busy workers and they get home really late. They al
     - HTML
     - CSS
     - Bootstrap
+
+##Know bugs
+ no bugs known
