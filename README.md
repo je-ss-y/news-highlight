@@ -1,4 +1,4 @@
-##Names 
+## Names 
 Nkubito jessica
 github:je-ss-y
 
@@ -11,11 +11,10 @@ In context, your parents are busy workers and they get home really late. They al
     - CSS
     - Bootstrap
 
-##Know bugs
+## Know bugs
  No bugs known
 
 
- ##License
+ ## License
 
  This product is strictly non-commercial
- 
