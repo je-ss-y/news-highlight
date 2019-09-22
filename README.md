@@ -12,4 +12,10 @@ In context, your parents are busy workers and they get home really late. They al
     - Bootstrap
 
 ##Know bugs
- no bugs known
+ No bugs known
+
+
+ ##License
+
+ This product is strictly non-commercial
+ 
